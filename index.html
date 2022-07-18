@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>HBD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  </head>
+  <body>
+    <div id="foto" class="foto" style="display:none">
+        <div class="image">
+        <img id="ftKm" src="https://www.gambaranimasi.org/data/media/367/animasi-bergerak-kue-ulang-tahun-0009.gif" width="100px" height="100px"/>
+        <img id="ftAk" style="opacity:0;position:absolute;" src="https://i.postimg.cc/KzDsjRjc/FB-IMG-16354292358400063.jpg" width="100px" height="100px"/></div>
+        <span id="sp1">
+            <b id="namamu"></b>
+            <div id="lope" style="display:inline-block;align-items:center;justify-content:center;"></div>
+        </span>
+    </div>
+
+    <div id='Content' style="display:none">
+        <div class="kolomteks"><p id="text"></p><p style="font-size:.80rem;" id="text2"></p></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        var swals = Swal
+
+        async function mulai(){  
+                nama= 'Mina'; 
+                var { value: nama } = await swals.fire({
+                    title: `Hai, ${nama}!`,
+                    confirmButtonText: 'Lanjut',
+                    allowOutsideClick: false,
+                    showCancelButton: false,
+                });  
+                                      
+                play();
+                window.nama = nama;  
+                ketik();
+                showDiv();
+                showFt();
+                text2 = "From: " + "Romi";
+                document.getElementById("namamu").innerHTML = "Halo, " + "Mina" + "!";                    
+        }
+        mulai();
+            
+    </script>
+    <script>
+        
+      var i=0,text;
+      text = "Selamat Ulang Tahun yang ke-20 Min. Sehat Terus, Semakin Dewasa, Semakin Rajin dan Pintar, Semoga Apa yang Kamu Cita-Citakan Selama Ini Bisa Tercapai ya, Semangat Buat Kuliahnya. GOOD LUCK!"
+      var u=0,text2;
+    </script>
+  </body>
+</html>
